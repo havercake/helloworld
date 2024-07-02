@@ -2,3 +2,41 @@ html {
 background: black;
 color: white;
 }
+body {
+  overflow-wrap: break-word;
+}
+h1 {
+  font-size: 55vw;
+  text-align: center;
+  line-height: 0.77;
+}
+hr {
+  height: 33vh;
+  background: tomato;
+  transform: rotate(45deg);
+  border-width: 10vh;
+  border-style: groove;
+}
+hr.slategrey {
+  background: linear-gradient(black, teal);
+  border-color: darkslategray;
+}
+hr.pushup-cut {
+  width:180vw;
+}
+hr.pinkdot-show {
+  border-color: pink;
+  border-width: 10vw;
+  transform: rotate(76deg);
+  width: 180vw
+  height: 50vw;
+}
+hr.opening-night {
+  transform: rotate(76deg);
+  height: 50vw;
+  background: linear-gradient(black, teal);
+  border-width: 10vw;
+  border-style: dotted;
+  border-color: pink;
+  border-block-start-color: ghostwhite;
+}
