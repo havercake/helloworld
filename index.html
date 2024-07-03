@@ -6,5 +6,49 @@
   <body>
     <h1>Hello World</h1>
     <hr class="opening-night"/>
+    <div id="work_1">
+      <style>
+        #soft_glow{
+          border-radius: 50%;
+          width: 25vw;
+          height: 25vw;
+          border-width: 1vw;
+          border-style: dotted;
+          margin: 0;
+        }
+        #soft_glow::after {
+          content: "⢯";
+          color: cornsilk;
+          font-size: 20vw;
+        }
+        #teal-light-circled {
+          width: 50vw;
+          height: 50vw;
+          border-radius: 50%;
+          border-width: 12vw;
+          margin: -12.5vw 0 0 0;
+          border-style: double;
+        }
+        #teal-light-circled::after {
+          content: "after light";
+          color: azure;
+          font-family: serif;
+          font-size: 20vw;
+          height: 100%;
+          display: block;
+          background: linear-gradient(teal, pink);
+        }
+        #commander-line {
+          border-width: 0.75vw;
+          border-style: solid;
+          margin: 1.5vw 0 0 0;
+          width: 87.5vw;
+        }
+      </style>
+      <img alt="blind suns rising set over after light of teal into zinc, aligned only through notes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWAQAAAADsz1GWAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFdJREFUCNdj+P//D8MP+T8MH9j/MDwo/sPw+PcfhudA/B4ofv/5H4aDzUBx/j8MB4BqHmwH4vNADJT7xvqH4YshUN9PoH4g/YephuEPuwzDD/4Ghg/yDQAuHzGkCFlXHwAAAABJRU5ErkJggg==">
+      <hr id="soft_glow"/>
+      <hr id="teal-light-circled"/>
+      <hr id="commander-line">
+    </div>
   </body>
 </html>
