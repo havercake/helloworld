@@ -6,9 +6,13 @@
   <body>
     <h1>Hello World</h1>
     <hr class="opening-night"/>
-    <div id="work_1">
+    <div id="work_after-light">
+      <hr id="soft-glow"/>
+      <hr id="teal-light-circled"/>
+      <hr id="commander-line">
+      <img alt="blind suns rising set over after light of teal into zinc, aligned only through notes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWAQAAAADsz1GWAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFdJREFUCNdj+P//D8MP+T8MH9j/MDwo/sPw+PcfhudA/B4ofv/5H4aDzUBx/j8MB4BqHmwH4vNADJT7xvqH4YshUN9PoH4g/YephuEPuwzDD/4Ghg/yDQAuHzGkCFlXHwAAAABJRU5ErkJggg==">
       <style>
-        #soft_glow{
+        #soft-glow{
           border-radius: 50%;
           width: 25vw;
           height: 25vw;
@@ -16,10 +20,17 @@
           border-style: dotted;
           margin: 0;
         }
-        #soft_glow::after {
+        #soft-glow::after {
           content: "⢯";
           color: cornsilk;
           font-size: 20vw;
+        }
+        #soft_glow {
+          animation:spinScale 4s linear infinite;
+        }
+        @keyframes spinScale {
+          50% { transform:rotate(180deg) scale(0.8); }
+          100% { transform:rotate(360deg) scale(1);}
         }
         #teal-light-circled {
           width: 50vw;
@@ -45,10 +56,6 @@
           width: 87.5vw;
         }
       </style>
-      <img alt="blind suns rising set over after light of teal into zinc, aligned only through notes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWAQAAAADsz1GWAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFdJREFUCNdj+P//D8MP+T8MH9j/MDwo/sPw+PcfhudA/B4ofv/5H4aDzUBx/j8MB4BqHmwH4vNADJT7xvqH4YshUN9PoH4g/YephuEPuwzDD/4Ghg/yDQAuHzGkCFlXHwAAAABJRU5ErkJggg==">
-      <hr id="soft_glow"/>
-      <hr id="teal-light-circled"/>
-      <hr id="commander-line">
     </div>
   </body>
 </html>
