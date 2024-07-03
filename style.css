@@ -10,7 +10,7 @@ h1 {
   text-align: center;
   line-height: 0.77;
 }
-hr {
+hr.opening-night {
   height: 33vh;
   background: tomato;
   transform: rotate(45deg);
