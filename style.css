@@ -4,9 +4,11 @@ color: white;
 }
 body {
   overflow-wrap: break-word;
+  margin-bottom: 33vw;
+  margin-top: 33vw;
 }
 h1 {
-  font-size: 55vw;
+  font-size: 60vw;
   text-align: center;
   line-height: 0.77;
 }

@@ -10,8 +10,11 @@
       <hr id="soft-glow"/>
       <hr id="teal-light-circled"/>
       <hr id="commander-line">
-      <img alt="blind suns rising set over after light of teal into zinc, aligned only through notes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWAQAAAADsz1GWAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFdJREFUCNdj+P//D8MP+T8MH9j/MDwo/sPw+PcfhudA/B4ofv/5H4aDzUBx/j8MB4BqHmwH4vNADJT7xvqH4YshUN9PoH4g/YephuEPuwzDD/4Ghg/yDQAuHzGkCFlXHwAAAABJRU5ErkJggg==">
+      <img alt="blind suns rising set over after light of teal into zinc, aligned only through notes" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAWAQAAAADsz1GWAAAACXBIWXMAAA7DAAAOwwHHb6hkAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAFdJREFUCNdj+P//C9MP+T8MH7j/MDwo/sPw+PcfhudA/B4ofv/5H4aDzUBx/j8MB4BqHmwH4vNADJT7xvqH4YshUN9PoH4g/YephuEPuwzDD/4Ghg/yDQAuHzGkCFlXHwAAAABJRU5ErkJggg==">
       <style>
+        #work_after-light {
+          margin-top: 50vw;
+        }
         #soft-glow{
           border-radius: 50%;
           width: 25vw;
@@ -21,16 +24,28 @@
           margin: 0;
         }
         #soft-glow::after {
-          content: "⢯";
+          content: "⢯⡓";
           color: cornsilk;
-          font-size: 20vw;
+          font-size: 17vw;
+          display: block;
+          height: 25vw;
+          width: 25vw;
+          padding: 12px;
+          box-sizing: border-box;
         }
-        #soft_glow {
-          animation:spinScale 4s linear infinite;
+        #soft-glow {
+          animation:spinScale 240s linear infinite;
         }
         @keyframes spinScale {
           50% { transform:rotate(180deg) scale(0.9); }
           100% { transform:rotate(360deg) scale(1);}
+        }
+        #soft-glow::after {
+          animation:star 45s linear infinite;
+        }
+        @keyframes star {
+          0% { transform:rotate(180deg) scale(1); }
+          100% { transform:rotate(-180deg) scale(1);}
         }
         #teal-light-circled {
           width: 50vw;
@@ -39,6 +54,8 @@
           border-width: 12vw;
           margin: -12.5vw 0 0 0;
           border-style: double;
+          position: relative;
+          z-index: 100;
         }
         #teal-light-circled::after {
           content: "after light";
@@ -54,6 +71,9 @@
           border-style: solid;
           margin: 1.5vw 0 0 0;
           width: 87.5vw;
+        }
+        #work_after-light img {
+          width: 64px;
         }
       </style>
     </div>
